@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Rowen Ignacio | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+  <nav>
+    <h2>Ralph Rowen Ignacio</h2>
+
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- About -->
+    <section id="about">
+
+    <div class="about-container">
+
+        <div class="profile-photo">
+            <img src="pic/ROWEN.jpg" alt="Ralph Rowen Ignacio">
+        </div>
+
+        <div class="about-content">
+
+            <h1>Ralph Rowen T. Ignacio</h1>
+
+            <h3>BS Information Technology Graduate</h3>
+
+            <p>
+                Aspiring IT professional with a solid foundation in
+                software development, web development, and database
+                management. Eager to apply technical knowledge, learn
+                emerging technologies, and contribute to an organization
+                that values continuous growth, innovation, and professional
+                development.
+            </p>
+
+            <a href="files/Ralph_Rowen_Ignacio_resume.pdf"
+               download="Ralph_Rowen_Ignacio_resume.pdf"
+               class="resume-button">
+                Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-category">
+            <h3>Programming & Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Database Management</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>Firebase</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Git & GitHub</li>
+                <li>XAMPP</li>
+                <li>Flutter</li>
+                <li>Arduino / ESP32</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Professional Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Adaptability</li>
+                <li>Willingness to Learn</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+    <h2>Work Experience</h2>
+
+    <h4>Transfer IT!</h4>
+    <p>Web Developer (OJT - Management Information System)</p>
+    <p>January 2026 - April 2026</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <h4>City of Malabon University</h4>
+        <p>Bachelor of Science in Information Technology</p>
+        <p>Graduated: 2026</p>
+        <br>
+
+        <h4>Arellano University Jose Rizal Campus</h4>
+        <p>Senior High School - ICT Strand</p>
+        <p>2019 – 2021</p>
+        <br>
+
+        <h4>Arellano University Jose Rizal Campus</h4>
+        <p>Junior High School</p>
+        <p>2015 - 2019</p>
+        <br>
+
+        <h4>Niugan Elementary School</h4>
+        <p>Elementary School</p>
+        <p>2009 - 2015</p>
+    </section>
+
+    <!-- Certificates -->
+<section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="certificate-container">
+
+        <!-- Certificate 1 -->
+        <div class="certificate-card">
+            <img src="pic/COC.jpg" alt="Certificate of Completion" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Certificate of Completion</h3>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card">
+            <img src="pic/cert.png" alt="Career and Professional Development in Information Technology" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Career and Professional Development in Information Technology</h3>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-card">
+            <img src="pic/cert1.png" alt="Building Self-Confidence and Professional Branding for IT Graduates" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Building Self-Confidence and Professional Branding for IT Graduates</h3>
+        </div>
+
+         <!-- Certificate 4 -->
+        <div class="certificate-card">
+            <img src="pic/cert2.png" alt="How to Write an Effective Project Management" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>How to Write an Effective Project Management</h3>
+        </div>
+
+         <!-- Certificate 5 -->
+        <div class="certificate-card">
+            <img src="pic/cert3.png" alt="From First Salary to Financial Freedom: Financial Planning for IT Graduates" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>From First Salary to Financial Freedom: Financial Planning for IT Graduates</h3>
+        </div>
+
+         <!-- Certificate 6 -->
+        <div class="certificate-card">
+            <img src="pic/cert4.png" alt="Emerging Trends in IT: Preparing Future Professionals for Digital Economy" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Emerging Trends in IT: Preparing Future Professionals for Digital Economy</h3>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Certificate Full-Screen Modal -->
+    <div id="certificateModal" class="certificate-modal">
+
+        <span class="close-button" onclick="closeCertificate()"> &times; </span>
+
+        <img id="modalCertificate" class="modal-certificate-image" src="" alt="" >
+
+        <p id="modalCertificateTitle"></p>
+    </div>
+
+      <!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <img src="pic/COC.jpg" alt="Certificate of Completion" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Certificate of Completion</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="pic/cert.png" alt="Career and Professional Development in Information Technology" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Career and Professional Development in Information Technology</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="pic/cert1.png" alt="Building Self-Confidence and Professional Branding for IT Graduates" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Building Self-Confidence and Professional Branding for IT Graduates</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="pic/cert2.png" alt="How to Write an Effective Project Management" onclick="openproject(this.src, this.alt)">
+
+            <h3>How to Write an Effective Project Management</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="pic/cert3.png" alt="From First Salary to Financial Freedom: Financial Planning for IT Graduates" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>From First Salary to Financial Freedom: Financial Planning for IT Graduates</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="pic/cert4.png" alt="Emerging Trends in IT: Preparing Future Professionals for Digital Economy" onclick="openCertificate(this.src, this.alt)">
+
+            <h3>Emerging Trends in IT: Preparing Future Professionals for Digital Economy</h3>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: ralphrowenignacio@gmail.com</p>
+        <p>Phone: 09852143576</p>
+        <p>Location: Niugan Malabon City, Philippines</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

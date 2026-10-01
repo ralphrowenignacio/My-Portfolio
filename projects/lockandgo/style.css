@@ -1,0 +1,976 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   PROJECT SIDEBAR
+========================================================= */
+
+.project-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    padding: 35px 25px;
+
+    background: #111827;
+    color: #ffffff;
+
+    border-right: 1px solid #1f2937;
+
+    overflow-y: auto;
+
+    z-index: 1500;
+}
+
+
+/* Sidebar title */
+
+.sidebar-title {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #374151;
+}
+
+.sidebar-title h2 {
+    margin-bottom: 5px;
+
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.sidebar-title p {
+    color: #94a3b8;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SIDEBAR NAVIGATION
+========================================================= */
+
+.project-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-navigation a {
+    display: block;
+
+    padding: 10px 12px;
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-left: 2px solid transparent;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+.project-navigation a:hover {
+    color: #ffffff;
+
+    background: #1f2937;
+
+    border-left-color: #ffffff;
+
+    padding-left: 17px;
+}
+
+
+/* =========================================================
+   MAIN PROJECT CONTENT
+========================================================= */
+
+.project-main {
+    margin-left: 250px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   PROJECT HEADER
+========================================================= */
+
+.project-header {
+    background: #111827;
+
+    color: #ffffff;
+
+    padding: 70px 50px;
+}
+
+
+/* Header content */
+
+.header-content {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BACK TO PORTFOLIO
+========================================================= */
+
+.back-button {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.back-button:hover {
+    color: #cbd5e1;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   PROJECT HEADER TEXT
+========================================================= */
+
+.project-label {
+    margin-bottom: 8px;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.project-header h1 {
+    margin-bottom: 8px;
+
+    font-size: 45px;
+
+    letter-spacing: 1px;
+}
+
+.project-subtitle {
+    color: #cbd5e1;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   PROJECT SECTIONS
+========================================================= */
+
+.project-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 80px 30px;
+}
+
+
+/* Light background sections */
+
+.light-section {
+    max-width: none;
+
+    background: #f8fafc;
+
+    padding-left: calc((100% - 1040px) / 2);
+    padding-right: calc((100% - 1040px) / 2);
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+    margin-bottom: 8px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.project-section h2 {
+    margin-bottom: 20px;
+
+    color: #111827;
+
+    font-size: 32px;
+}
+
+
+/* =========================================================
+   SECTION PARAGRAPHS
+========================================================= */
+
+.project-section > p:not(.section-label) {
+    max-width: 850px;
+
+    margin-bottom: 15px;
+
+    color: #475569;
+}
+
+.section-description {
+    margin-bottom: 35px !important;
+}
+
+
+/* =========================================================
+   OBJECTIVES
+========================================================= */
+
+.objectives-list {
+    max-width: 800px;
+
+    padding-left: 22px;
+
+    color: #475569;
+}
+
+.objectives-list li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.technology-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.technology-list span {
+    padding: 8px 14px;
+
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-size: 13px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.technology-list span:hover {
+    background: #f1f5f9;
+
+    border-color: #94a3b8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SYSTEM PROCESS
+========================================================= */
+
+.process-container {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.process-card {
+    padding: 25px 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.process-card span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.process-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+.process-card p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   HARDWARE DEVELOPMENT
+========================================================= */
+
+.hardware-category {
+    margin-top: 60px;
+}
+
+.hardware-category h3 {
+    margin-bottom: 8px;
+
+    color: #111827;
+
+    font-size: 23px;
+}
+
+.hardware-category > p {
+    max-width: 800px;
+
+    margin-bottom: 25px;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   IMAGE GALLERY
+========================================================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 220px;
+
+    overflow: hidden;
+
+    border: 1px solid #d1d5db;
+
+    background: #f1f5f9;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   FINAL PROTOTYPE IMAGE
+========================================================= */
+
+.final-image {
+    width: 100%;
+
+    max-width: 550px;
+
+    height: 350px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 1px solid #d1d5db;
+
+    background: #f1f5f9;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.final-image:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.final-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.3s ease;
+}
+
+.final-image:hover img {
+    transform: scale(1.05);
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   IMAGE MODAL
+========================================================= */
+
+.image-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 2000;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.90);
+
+    animation: modalFade 0.25s ease;
+}
+
+.image-modal.show {
+    display: flex;
+}
+
+.modal-image {
+    max-width: 90vw;
+
+    max-height: 82vh;
+
+    object-fit: contain;
+
+    border: 2px solid #ffffff;
+
+    animation: imageZoom 0.3s ease;
+}
+
+#modalCaption {
+    max-width: 800px;
+
+    margin-top: 15px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MODAL CLOSE BUTTON
+========================================================= */
+
+.close-button {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 40px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.close-button:hover {
+    transform: rotate(90deg);
+
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   MODAL ANIMATION
+========================================================= */
+
+@keyframes modalFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageZoom {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   PROJECT VIDEO
+========================================================= */
+
+.video-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #000000;
+
+    border: 1px solid #d1d5db;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.video-container video {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.project-footer {
+    padding: 40px 20px;
+
+    background: #111827;
+
+    color: #cbd5e1;
+
+    text-align: center;
+}
+
+.project-footer a {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: opacity 0.3s ease;
+}
+
+.project-footer a:hover {
+    opacity: 0.7;
+}
+
+.project-footer p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .project-sidebar {
+        width: 220px;
+    }
+
+    .project-main {
+        margin-left: 220px;
+    }
+
+    .light-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .process-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-sidebar {
+        width: 210px;
+    }
+
+    .project-main {
+        margin-left: 210px;
+    }
+
+    .project-header h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =========================
+       SIDEBAR
+    ========================= */
+
+    .project-sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #1f2937;
+    }
+
+    .sidebar-title {
+        margin-bottom: 20px;
+
+        padding-bottom: 15px;
+    }
+
+    .sidebar-title h2 {
+        font-size: 20px;
+    }
+
+
+    /* =========================
+       SIDEBAR NAVIGATION
+    ========================= */
+
+    .project-navigation {
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+    }
+
+    .project-navigation a {
+        padding: 8px 10px;
+
+        border-left: none;
+
+        border-bottom: 2px solid transparent;
+    }
+
+    .project-navigation a:hover {
+        padding-left: 10px;
+
+        border-left: none;
+
+        border-bottom-color: #ffffff;
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
+    .project-main {
+        margin-left: 0;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .project-header {
+        padding: 50px 20px;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .back-button {
+        margin-bottom: 30px;
+
+        font-size: 14px;
+    }
+
+    .project-header h1 {
+        font-size: 35px;
+    }
+
+    .project-subtitle {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    .project-section {
+        padding: 60px 20px;
+    }
+
+    .light-section {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+    .project-section h2 {
+        font-size: 27px;
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 240px;
+    }
+
+
+    /* =========================
+       FINAL PROTOTYPE
+    ========================= */
+
+    .final-image {
+        max-width: 100%;
+
+        height: 280px;
+    }
+
+
+    /* =========================
+       VIDEO
+    ========================= */
+
+    .video-container {
+        width: 100%;
+    }
+
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .modal-image {
+        max-width: 95vw;
+
+        max-height: 75vh;
+    }
+
+    .close-button {
+        top: 10px;
+
+        right: 15px;
+
+        font-size: 35px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .project-header h1 {
+        font-size: 30px;
+    }
+
+    .project-subtitle {
+        font-size: 15px;
+    }
+
+    .project-section {
+        padding: 50px 18px;
+    }
+
+    .project-section h2 {
+        font-size: 25px;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .final-image {
+        height: 220px;
+    }
+}
