@@ -1,268 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph Rowen Ignacio | Portfolio</title>
+    <meta name="description" content="Ralph Rowen Ignacio - IT Professional Portfolio">
+    <title>Ralph Rowen Ignacio | IT Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
-  <nav>
-    <h2>Ralph Rowen Ignacio</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+          <a href="#about" class="logo">
+            <span class="logo-badge">RRI</span>
+             <span class="logo-text">Ralph Rowen Ignacio</span>
+          </a>
 
-    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <ul id="navMenu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- About -->
-    <section id="about">
+    <section id="about" class="about-section">
+        <div class="about-container">
 
-    <div class="about-container">
+            <div class="about-image">
+                <img src="pic/rowen.jpg" alt="Ralph Rowen Ignacio">
+            </div>
 
-        <div class="profile-photo">
-            <img src="pic/rowen.jpg" alt="Ralph Rowen Ignacio">
+            <div class="about-content">
+                <p class="section-label">ABOUT ME</p>
+
+                <h1>Ralph Rowen Ignacio</h1>
+
+                <h2>BS Information Technology Graduate</h2>
+
+                <p>
+                    I am an aspiring IT professional with a foundation
+                    in software development, web development, and
+                    database management. I am eager to learn new
+                    technologies and contribute to an organization
+                    while continuously developing my technical and
+                    professional skills.
+                </p>
+
+                <a href="files/Ralph Rowen Ignacio resume.pdf"
+                   download="Ralph_Rowen_Ignacio_resume.pdf"
+                   class="resume-button">
+                    <i class="fa-solid fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+
+        <div class="section-header">
+            <p class="section-label">WHAT I KNOW</p>
+            <h2>Skills</h2>
+            <p>
+                My current technical and professional skills
+                developed through academic projects, personal
+                learning, and hands-on practice.
+            </p>
         </div>
 
-        <div class="about-content">
+        <div class="skills-container">
 
-            <h1>Ralph Rowen T. Ignacio</h1>
+            <!-- PROGRAMMING -->
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Programming &amp; Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>NodeJS</li>
+                    <li>Java</li>
+                </ul>
+            </div>
 
-            <h3>BS Information Technology Graduate</h3>
+            <!-- DATABASE -->
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>Database Management</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
 
-            <p>
-                Aspiring IT professional with a solid foundation in
-                software development, web development, and database
-                management. Eager to apply technical knowledge, learn
-                emerging technologies, and contribute to an organization
-                that values continuous growth, innovation, and professional
-                development.
+            <!-- TOOLS -->
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>Tools &amp; Technologies</h3>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>XAMPP</li>
+                    <li>Flutter</li>
+                    <li>Arduino / ESP32</li>
+                </ul>
+            </div>
+
+            <!-- PROFESSIONAL -->
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Professional Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Adaptability</li>
+                    <li>Willingness to Learn</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+
+        <div class="section-header">
+            <p class="section-label">PROFESSIONAL EXPERIENCE</p>
+            <h2>Experience</h2>
+        </div>
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+                <div>
+                    <h3>Management Information System Intern</h3>
+                    <p class="company-name">Transfer IT</p>
+                </div>
+
+                <span class="experience-hours">400 Internship Hours</span>
+            </div>
+
+            <p class="experience-description">
+                Completed an internship in the Management Information
+                System field, gaining practical exposure to workplace
+                environments, information technology processes,
+                communication, teamwork, and professional development.
             </p>
 
-            <a href="files/Ralph_Rowen_Ignacio_resume.pdf"
-               download="Ralph_Rowen_Ignacio_resume.pdf"
-               class="resume-button">
-                Download Resume
-            </a>
-
         </div>
-
-    </div>
-
     </section>
 
-    <section id="skills">
-    <h2>Skills</h2>
+    <section id="education" class="section education-section">
 
-    <div class="skills-container">
-
-        <div class="skill-category">
-            <h3>Programming & Web Development</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-            </ul>
+        <div class="section-header">
+            <p class="section-label">EDUCATIONAL BACKGROUND</p>
+            <h2>Education</h2>
         </div>
 
-        <div class="skill-category">
-            <h3>Database Management</h3>
-            <ul>
-                <li>MySQL</li>
-                <li>SQL</li>
-                <li>Firebase</li>
-            </ul>
+        <div class="education-container">
+
+            <!-- UNIVERSITY -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <p class="education-date">2022 – 2026</p>
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>City of Malabon University</p>
+                </div>
+            </div>
+
+            <!-- SENIOR HIGH -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div>
+                    <p class="education-date">2019 – 2022</p>
+                    <h3>ICT Strand</h3>
+                    <p>Arellano University Jose Rizal Campus</p>
+                </div>
+            </div>
+
+             <!-- JUNIOR HIGH -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div>
+                    <p class="education-date">2015 – 2019</p>
+                    <h3>Junior High School</h3>
+                    <p>Arellano University Jose Rizal Campus</p>
+                </div>
+            </div>
+
+                 <!-- ELEMENTARY SCHOOL -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div>
+                    <p class="education-date">2009 – 2015</p>
+                    <h3>Elementary School</h3>
+                    <p>Niugan Elementary School</p>
+                </div>
+            </div>
+
+
         </div>
-
-        <div class="skill-category">
-            <h3>Tools & Technologies</h3>
-            <ul>
-                <li>Visual Studio Code</li>
-                <li>Git & GitHub</li>
-                <li>XAMPP</li>
-                <li>Flutter</li>
-                <li>Arduino / ESP32</li>
-            </ul>
-        </div>
-
-        <div class="skill-category">
-            <h3>Professional Skills</h3>
-            <ul>
-                <li>Communication</li>
-                <li>Teamwork</li>
-                <li>Problem Solving</li>
-                <li>Adaptability</li>
-                <li>Willingness to Learn</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Work Experience -->
-    <section id="experience">
-    <h2>Work Experience</h2>
-
-    <h4>Transfer IT!</h4>
-    <p>Web Developer (OJT - Management Information System)</p>
-    <p>January 2026 - April 2026</p>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
+    <section id="certificates" class="section certificates-section">
 
-        <h4>City of Malabon University</h4>
-        <p>Bachelor of Science in Information Technology</p>
-        <p>Graduated: 2026</p>
-        <br>
+        <div class="section-header">
+            <p class="section-label">PROFESSIONAL DEVELOPMENT</p>
+            <h2>Certificates</h2>
+            <p>
+                Certificates and professional development activities
+                completed throughout my academic journey.
+            </p>
+        </div>
 
-        <h4>Arellano University Jose Rizal Campus</h4>
-        <p>Senior High School - ICT Strand</p>
-        <p>2019 – 2021</p>
-        <br>
+        <div class="certificates-container">
 
-        <h4>Arellano University Jose Rizal Campus</h4>
-        <p>Junior High School</p>
-        <p>2015 - 2019</p>
-        <br>
+            <!-- CERTIFICATE 1 -->
+            <div class="certificate-card">
+                <img src="pic/COC.jpg"
+                     alt="Certificate of Completion"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>Certificate of Completion</h3>
+            </div>
 
-        <h4>Niugan Elementary School</h4>
-        <p>Elementary School</p>
-        <p>2009 - 2015</p>
+            <!-- CERTIFICATE 2 -->
+            <div class="certificate-card">
+                <img src="pic/cert.png"
+                     alt="Career and Professional Development in Information Technology"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>Career and Professional Development in Information Technology</h3>
+            </div>
+
+            <!-- CERTIFICATE 3 -->
+            <div class="certificate-card">
+                <img src="pic/cert1.png"
+                     alt="Building Self-Confidence and Professional Branding for IT Graduates"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>Building Self-Confidence and Professional Branding for IT Graduates</h3>
+            </div>
+
+            <!-- CERTIFICATE 4 -->
+            <div class="certificate-card">
+                <img src="pic/cert2.png"
+                     alt="How to Write an Effective Project Management"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>How to Write an Effective Project Management</h3>
+            </div>
+
+            <!-- CERTIFICATE 5 -->
+            <div class="certificate-card">
+                <img src="pic/cert3.png"
+                     alt="From First Salary to Financial Freedom"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>From First Salary to Financial Freedom</h3>
+            </div>
+
+            <!-- CERTIFICATE 6 -->
+            <div class="certificate-card">
+                <img src="pic/cert4.png"
+                     alt="Emerging Trends in IT"
+                     onclick="openCertificate(this.src, this.alt)">
+                <h3>Emerging Trends in IT</h3>
+            </div>
+
+        </div>
     </section>
 
-    <!-- Certificates -->
-<section id="certificates">
-    <h2>Certificates</h2>
-
-    <div class="certificate-container">
-
-        <!-- Certificate 1 -->
-        <div class="certificate-card">
-            <img src="pic/COC.jpg" alt="Certificate of Completion" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Certificate of Completion</h3>
-        </div>
-
-        <!-- Certificate 2 -->
-        <div class="certificate-card">
-            <img src="pic/cert.png" alt="Career and Professional Development in Information Technology" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Career and Professional Development in Information Technology</h3>
-        </div>
-
-        <!-- Certificate 3 -->
-        <div class="certificate-card">
-            <img src="pic/cert1.png" alt="Building Self-Confidence and Professional Branding for IT Graduates" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Building Self-Confidence and Professional Branding for IT Graduates</h3>
-        </div>
-
-         <!-- Certificate 4 -->
-        <div class="certificate-card">
-            <img src="pic/cert2.png" alt="How to Write an Effective Project Management" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>How to Write an Effective Project Management</h3>
-        </div>
-
-         <!-- Certificate 5 -->
-        <div class="certificate-card">
-            <img src="pic/cert3.png" alt="From First Salary to Financial Freedom: Financial Planning for IT Graduates" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>From First Salary to Financial Freedom: Financial Planning for IT Graduates</h3>
-        </div>
-
-         <!-- Certificate 6 -->
-        <div class="certificate-card">
-            <img src="pic/cert4.png" alt="Emerging Trends in IT: Preparing Future Professionals for Digital Economy" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Emerging Trends in IT: Preparing Future Professionals for Digital Economy</h3>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Certificate Full-Screen Modal -->
     <div id="certificateModal" class="certificate-modal">
 
-        <span class="close-button" onclick="closeCertificate()"> &times; </span>
+        <button class="certificate-close"
+                onclick="closeCertificate()"
+                aria-label="Close certificate">
+            &times;
+        </button>
 
-        <img id="modalCertificate" class="modal-certificate-image" src="" alt="" >
-
-        <p id="modalCertificateTitle"></p>
-    </div>
-
-      <!-- Projects -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-            <img src="pic/COC.jpg" alt="Certificate of Completion" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Certificate of Completion</h3>
-        </div>
-
-        <div class="project-card">
-            <img src="pic/cert.png" alt="Career and Professional Development in Information Technology" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Career and Professional Development in Information Technology</h3>
-        </div>
-
-        <div class="project-card">
-            <img src="pic/cert1.png" alt="Building Self-Confidence and Professional Branding for IT Graduates" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Building Self-Confidence and Professional Branding for IT Graduates</h3>
-        </div>
-
-        <div class="project-card">
-            <img src="pic/cert2.png" alt="How to Write an Effective Project Management" onclick="openproject(this.src, this.alt)">
-
-            <h3>How to Write an Effective Project Management</h3>
-        </div>
-
-        <div class="project-card">
-            <img src="pic/cert3.png" alt="From First Salary to Financial Freedom: Financial Planning for IT Graduates" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>From First Salary to Financial Freedom: Financial Planning for IT Graduates</h3>
-        </div>
-
-        <div class="project-card">
-            <img src="pic/cert4.png" alt="Emerging Trends in IT: Preparing Future Professionals for Digital Economy" onclick="openCertificate(this.src, this.alt)">
-
-            <h3>Emerging Trends in IT: Preparing Future Professionals for Digital Economy</h3>
+        <div class="certificate-modal-content">
+            <img id="modalCertificate" class="modal-certificate-image" src="" alt="">
+            <p id="modalCertificateTitle"></p>
         </div>
 
     </div>
-</section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="projects" class="section projects-section">
 
-        <p>Email: ralphrowenignacio@gmail.com</p>
-        <p>Phone: 09852143576</p>
-        <p>Location: Niugan Malabon City, Philippines</p>
+        <div class="section-header">
+            <p class="section-label">MY WORK</p>
+            <h2>Projects</h2>
+            <p>
+                Selected academic and technical projects that
+                demonstrate my experience in software development,
+                web development, database management, and
+                hardware integration.
+            </p>
+        </div>
+
+        <div class="projects-container">
+
+            <!-- LOCKANDGO -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="projects/lockandgo/lockandgo.jpg"
+                         alt="LOCKANDGO Smart Bicycle Locker System">
+                </div>
+
+                <div class="project-content">
+                    <p class="project-type">CAPSTONE PROJECT</p>
+
+                    <h3>LOCKANDGO</h3>
+
+                    <p>
+                        A solar-powered smart bicycle locker system
+                        with mobile application access and secure
+                        electronic locking developed for
+                        City of Malabon University.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>ESP32</span>
+                        <span>Arduino</span>
+                    </div>
+
+                    <a href="projects/lockandgo/index.html" class="project-button">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- SKILLSHAREHUB -->
+            <div class="project-card">
+
+                <div class="project-image skillshare-image">
+                    <img src="projects/skillsharehub/logo.png"
+                         alt="SkillShareHub">
+                </div>
+
+                <div class="project-content">
+                    <p class="project-type">WEB APPLICATION</p>
+
+                    <h3>SkillShareHub</h3>
+
+                    <p>
+                        A collaborative learning platform designed
+                        to support students in sharing skills,
+                        knowledge, and learning resources.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>PHP</span>
+                        <span>MariaDB</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="projects/skillsharehub/skillsharehub.html" class="project-button">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
     </section>
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-header">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2>Contact</h2>
+            <p>
+                I am open to opportunities, professional
+                connections, and learning experiences in
+                the information technology industry.
+            </p>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- CONTACT INFORMATION -->
+            <div class="contact-information">
+
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out through the information below.</p>
+
+                <!-- EMAIL -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:ralphrowenignacio@gmail.com">ralphrowenignacio@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <span>09852143576</span>
+                    </div>
+                </div>
+
+                <!-- LOCATION -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <span>Malabon, Metro Manila, Philippines</span>
+                    </div>
+                </div>
+
+                <!-- GITHUB -->
+                <div class="contact-item">
+                    <i class="fa-brands fa-github contact-icon"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINKEDIN -->
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin contact-icon"></i>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FACEBOOK -->
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook contact-icon"></i>
+                    <div>
+                        <strong>Facebook</strong>
+                        <a href="https://web.facebook.com/ralphrowen.ignacio.79/" target="_blank" rel="noopener noreferrer">
+                            Facebook Profile
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form" id="contactForm">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Ralph Rowen Ignacio. All Rights Reserved.</p>
+        <p>IT Professional Portfolio</p>
+    </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
